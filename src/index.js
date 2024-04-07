@@ -42,20 +42,27 @@ const forTitles = function() {
 }
 forTitles()
 
-const forPoster = function() {
-    fetch("http://localhost:3000/films")
+console.log( document.querySelector('#f-Items').addEventListener('mousover', forTitles))
+
+
+
+/*
+const forPoster = function(){
+    fetch("http://localhost:3000/films/1")
     .then(res => res.json())
     .then((data) => {
-        // console.log(data);
+        console.log(data);
         data.forEach((movie) => {
-            const posterDiv = document.createElement('div')
-            posterDiv.textContent = movie.poster
+            //const posterDiv = document.createElement('div')
+            //posterDiv.textContent = movie.poster
             // titleFilms.appendChild(titleDiv)
 
         })
     })
-    
+  
 }
 forPoster()
 
-//document.getElementById("f-Item").addEventListener('click', forPoster)
+document.getElementById("f-Item").addEventListener('click', forPoster)
+*/
+
