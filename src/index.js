@@ -57,7 +57,7 @@ function movieDetails(){
                 let cards = document.getElementById('showing')
             let remainingTicket = `${movie.capacity}` - `${movie.tickets_sold}`
             cards.innerHTML = `
-            <div class= 'card'> </div>
+            <div class= 'card'> 
             <div id= 'title' class = 'title'> ${movie.title} </div>
             <div id= 'runtime' class = 'meta'>${movie.runtime} minutes </div>
             <div class="content">
@@ -66,7 +66,7 @@ function movieDetails(){
                 <span id="showtime" class="ui label">${movie.showtime}</span>
                 <span id="ticket-num">${remainingTicket}</span> remaining tickets
             </div>
-            div class="extra content">
+            <div class="extra content">
               <button id="buy-ticket" class="ui orange button">
                 Buy Ticket
               </button>
