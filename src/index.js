@@ -24,10 +24,12 @@ console.log(initialize)
 
 */
 
+const link = " https://json-server-1-wvrp.onrender.com/films"
+console.log(link);
 const titleFilms = document.getElementById("f-Item")
 
 const forTitles = function() {
-    fetch("http://localhost:3000/films")
+    fetch( "https://json-server-1-wvrp.onrender.com/films")
     .then(res => res.json())
     .then(data => {
         console.log(data);
@@ -47,7 +49,7 @@ const forTitles = function() {
 forTitles()
 
 function movieDetails(){
-    fetch("http://localhost:3000/films")
+    fetch( " https://json-server-1-wvrp.onrender.com/films")
     .then(res => res.json())
     .then(data => {
         // console.log(data);
