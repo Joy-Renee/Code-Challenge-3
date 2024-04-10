@@ -53,3 +53,7 @@ img {
 #film-info {
   padding-bottom: 15px;
 }
+
+.ul-btn {
+  cursor: pointer;
+}
